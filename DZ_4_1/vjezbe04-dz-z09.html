@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function savrsen(broj) {
+    let suma = 0;
+    for (let i = 1; i < broj; i++) {
+        if (broj % i === 0) {
+            suma += i;
+        }
+    }
+    return suma === broj;
+}
+
+function print(n) {
+    document.write("Savrseni brojevi između 1 i ", n, "</br>");
+    for (let i = 1; i <= n; i++) {
+        if (savrsen(i)) {
+            document.write(i, "</br>");
+        }
+    }
+}
+
+const n = prompt("Unesite vrijednost od n:");
+
+print(n);
+
+
+
+</script>
+</body>
+</html>

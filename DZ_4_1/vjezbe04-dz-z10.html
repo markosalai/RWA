@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function rand(x, y) {
+	for(let i=0;i<5;i++)
+		document.write(Math.floor((Math.random() * (y - x + 1) )) + x, "</br>");
+}
+var x=prompt("Unesite prvi broj");
+var y=prompt("Unesite drugi broj");
+rand(x,y);
+</script>
+</body>
+</html>

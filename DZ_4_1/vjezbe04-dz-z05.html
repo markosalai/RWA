@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+const osoba1 = {
+	firstName:"Marko",
+	lastName:"Maric",
+	age:40,
+	eyeColor:"black",
+}
+const osoba2 = {
+	firstName:"Mario",
+	lastName:"Markic",
+	age:30,
+	eyeColor:"blue",
+}
+const osoba3 = {
+	firstName:"Petar",
+	lastName:"Peric",
+	age:28,
+	eyeColor:"brown",
+}
+ 
+for(const key in osoba1){
+	document.write(key + ": " + osoba1[key], "</br>");
+
+}
+for(const key in osoba2){
+	document.write(key + ": " + osoba2[key], "</br>");
+
+}
+for(const key in osoba3){
+	document.write(key + ": " + osoba3[key], "</br>");
+
+}
+
+<!-- const Osoba = [osoba1, osoba2, osoba3]; -->
+
+<!-- for(let i=0; i<Osoba.length;i++){ -->
+	<!-- document.write(JSON.stringify(Osoba[i]), "</br>"); -->
+	
+
+ </script>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function novi(arr) {
+    const novi = arr.filter(str => /^[A-Z]/.test(str) || str.length >= 5);
+    document.write("Novi niz:", novi);
+}
+
+var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', ',', 'je', 'proradio'];
+
+novi(arr);
+
+
+
+</script>
+</body>
+</html>

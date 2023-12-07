@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS osnove</title>
+</head>
+<body>
+ <script type="text/javascript">
+	polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+	document.write("a)\t", polje.length, "<br/>");
+	
+	polje.sort(function(a, b){return a - b});
+	polje.reverse();
+	document.write("b)\t", polje, "<br/>");
+	polje.reverse();
+	document.write("c)\t", polje, "<br/>");
+	polje.pop();
+	document.write("d)\t", polje, "<br/>");
+	polje.push(19,22);
+	document.write("e)\t", polje, "<br/>");
+	
+	polje2 = new Array("Banana", "Orange", "Apple", "Mango");
+	polje_final = polje+polje2;
+	document.write("f)\t");
+	for(var i=0;i<polje_final.length;i++){
+		document.write(polje_final[i]);
+	}
+ </script>
+</body>
+</html>
