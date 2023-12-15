@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+
+	function regOznaka(x){		
+		if(((x[0]>='A')&&(x[0]<='Z'))&&((x[1]>-1)&&(x[1]<11))&&((x[2]>-1)&&(x[2]<11))&&(x[3]==="-")&&((x[0]>='A')&&(x[0]<='Z'))&&(x[5]==="-")&&((x[6]>-1)&&(x[6]<11))&&((x[7]>-1)&&(x[7]<11))&&((x[8]>-1)&&(x[8]<11)))
+		{return true;}
+		else{
+			return false;
+		}
+}
+	function validacija(){
+	let input = document.getElementById("oznaka").value;
+	if(!regOznaka(input))
+		{alert("Nije registarska oznaka BiH.");}
+	else
+		{alert("Jeste registarska oznaka BiH.");}	
+	}
+ </script>
+</head>
+<body>
+	<form>
+		<input type="text" id="oznaka">
+		<button onclick="validacija();">Validacija</button>
+	</form>
+</body>
+</html>

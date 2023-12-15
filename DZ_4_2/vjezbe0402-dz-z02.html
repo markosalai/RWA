@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+	function pozadina(){
+		const RanHexColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#" + RanHexColor;
+		var ime = "#";
+		document.getElementById("p1").textContent="#" + RanHexColor;			
+	}
+	
+ </script>
+</head>
+<body>
+	<button onclick="pozadina();">Promijeni pozadinu</button>
+	<p id="p1">#ffffff</p>
+</body>
+</html>

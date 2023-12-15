@@ -1,0 +1,24 @@
+	<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+
+	function zbroj(){
+	let x = parseInt(document.getElementById("X").value);
+	let y = parseInt(document.getElementById("Y").value);
+	
+	document.getElementById("rezultat").value=x+y;
+	}
+ </script>
+</head>
+<body>
+	<form>
+		X = <input type="text" id="X"></br>
+		Y = <input type="text" id="Y">
+		<button type="button" onclick="zbroj();">Zbroji</button></br></br>
+		REZULTAT = <input type="text" id="rezultat" >
+	</form>
+</body>
+</html>

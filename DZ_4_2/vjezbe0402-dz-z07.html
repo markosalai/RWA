@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+
+	function izracunaj(){
+	let x = parseInt(document.getElementById("dan").value);
+	let y = parseInt(document.getElementById("mjesec").value);
+	let z = parseInt(document.getElementById("godina").value);
+	
+	const datum = new Date();
+	let godina = datum.getFullYear();
+	let mjesec = datum.getMonth();
+	let sati = datum.getHours();
+	
+	alert("Imate "+(godina-z)+" godina i "+(mjesec-y)+" mjeseci.");
+	}
+ </script>
+</head>
+<body>
+	<form>
+		Unesite dan (01-31) <input type="text" id="dan"></br>
+		Unesite mjesec (01-12) <input type="text" id="mjesec">
+		Unesite godinu (npr. 1970) <input type="text" id="godina"></br>
+		<button type="button" onclick="izracunaj();">Izracunaj</button>
+	</form>
+</body>
+</html>

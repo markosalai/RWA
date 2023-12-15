@@ -1,0 +1,82 @@
+	<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+	
+	function zbroj(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(x+y)}
+	function razlika(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(x-y)}
+	function mnozenje(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(x*y)}
+	function dijeljenje(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(x/y)}
+	function sin(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.sin(x))
+	alert(Math.cos(y))}
+	function cos(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.cos(x))
+	alert(Math.cos(y))}
+	function tan(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.tan(x))
+	alert(Math.tan(y))}
+	function ln(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.exp(x))
+	alert(Math.exp(y))}
+	function log(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.log(x))
+	alert(Math.log(y))}
+	function Kvadrat(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.pow(x,2))}
+	function Kub(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.pow(x,3))}
+	function potencija(x,y){
+	var x = parseInt(document.getElementById("op1").value);
+	var y = parseInt(document.getElementById("op2").value);
+	alert(Math.pow(x,y))}
+	
+ </script>
+</head>
+<body>
+	<form>
+		<input type="text" id="op1">operand 1</br>
+		<input type="text" id="op2">operand 2</br>
+		<button type="button" onclick="zbroj();">+</button>
+		<button type="button" onclick="razlika();">-</button>
+		<button type="button" onclick="mnozenje();">*</button>
+		<button type="button" onclick="dijeljenje();">/</button>
+		<button type="button" onclick="sin();">sin</button>
+		<button type="button" onclick="cos();">cos</button>
+		<button type="button" onclick="tan();">tan</button>
+		<button type="button" onclick="ln();">ln</button>
+		<button type="button" onclick="log();">log</button>
+		<button type="button" onclick="Kvadrat();">^2</button>
+		<button type="button" onclick="Kub();">^3</button>
+		<button type="button" onclick="potencija();">x<sup>y</sup></button>
+	</form>
+</body>
+</html>

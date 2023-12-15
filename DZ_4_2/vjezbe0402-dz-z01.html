@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+</head>
+<body>
+ <script type="text/javascript">
+var suma=0;
+var umn=1;
+let niz = [];
+input = prompt("Unesite niz prirodnih brojeva odvojenih zarezom");
+niz = input.split(",");
+for(let i=0; i<niz.length;i++){
+    suma+=parseInt(niz[i]);
+}
+var as=suma/niz.length;
+document.write("Aritmetička sredina: ",as, "</br>");
+for(let i=0; i<niz.length; i++){
+    umn*=parseInt(niz[i]);
+}
+var gs=Math.pow(umn,(1/niz.length));
+document.write("Geometrijska sredina: ", gs);
+ </script>
+</body>
+</html>
