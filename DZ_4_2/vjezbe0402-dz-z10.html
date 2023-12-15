@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<script language="javascript" type="text/javascript">
+	function append(){
+	const p = document.createElement("p");
+	document.getElementById("thisLocation").appendChild(p);
+	p.textContent = "tekst";
+	}
+</script>
+</head>
+<body>
+<p><a href="#" onclick="append();">Kliknite ovdje da dodate novi paragraf tekst</a></p>
+<p id="thisLocation">Novi paragrafi teksta će se pojaviti ispod</p>
+<p>Ovo je defaultn-ni prvi paragraf teksta</p>
+</body>
+</html>
