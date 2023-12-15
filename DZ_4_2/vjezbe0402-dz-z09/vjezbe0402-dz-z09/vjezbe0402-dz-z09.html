@@ -1,0 +1,28 @@
+	<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>JS Dem</title>
+ <script type="text/javascript">
+	function onOff() {
+		var image = document.getElementById('prekidac');
+		if (image.src.match("off-removebg-preview.png")) {
+			image.src = "on-removebg-preview.png";
+		} else {
+			image.src = "off-removebg-preview.png";
+		}
+			var image = document.getElementById('zarulja');
+		if (image.src.match("zarulja_off_2.png")) {
+			image.src = "zarulja_on_2.png";
+		} else {
+			image.src = "zarulja_off_2.png";
+  }
+}
+ </script>
+</head>
+<body>
+	<img onclick="onOff()" id="prekidac" src="off-removebg-preview.png">
+	<img id="zarulja" src="zarulja_off_2.png" style="float:right;">	
+		
+</body>
+</html>
